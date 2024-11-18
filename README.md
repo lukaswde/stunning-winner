@@ -4,7 +4,11 @@
     pnpm run dev
 
 ### Installation guide:
-    coming soon...
+1. install Node.js
+2. open the project folder in vscode
+3. npm install -g pnpm
+4. insert SQL-Server credentials
+
 
 This is the starter template for the Next.js App Router Course. It contains the starting code for the dashboard application.
 
