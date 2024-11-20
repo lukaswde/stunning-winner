@@ -1,6 +1,6 @@
 ## Next.js App Router Course - Starter
 
-### For start developing run:
+### To start developing run:
     pnpm run dev
 
 ### Installation guide:
