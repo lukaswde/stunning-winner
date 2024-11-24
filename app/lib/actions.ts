@@ -5,7 +5,7 @@ import { sql } from '@vercel/postgres';
 import { revalidatePath } from 'next/cache';
 import { redirect } from 'next/navigation';
 
-const formSchema = z.object({
+const FormSchema = z.object({
     id: z.string(),
     customerId: z.string({
         invalid_type_error: 'Please select a customer.',
@@ -18,8 +18,8 @@ const formSchema = z.object({
     date: z.string(),
 });
 
-const CreateInvoice = formSchema.omit({ id: true, date: true });
-const UpdateInvoice = formSchema.omit({ id: true, date: true });
+const CreateInvoice = FormSchema.omit({ id: true, date: true });
+const UpdateInvoice = FormSchema.omit({ id: true, date: true });
 
 export type State = {
     errors?: {
